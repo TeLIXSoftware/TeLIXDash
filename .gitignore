@@ -134,3 +134,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# macOS system files
+.DS_Store
+
+# Jest coverage output
+coverage/
+
+# Jest cache files
+jest-cache/
+jest/
