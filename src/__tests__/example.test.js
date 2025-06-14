@@ -1,3 +1,6 @@
+/**
+ * @jest-environment node
+ */
 
 function double(n) {
     return n * 2;
