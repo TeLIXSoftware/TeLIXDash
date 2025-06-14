@@ -1,0 +1,17 @@
+name: DashTest CI
+on: 
+  push:
+    branches: [main, beta]
+  pull_request:
+  workflow_dispatch:
+
+jobs: 
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: action/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm run test
